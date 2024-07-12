@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin's Portfolio</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/82f3211cf7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!----------------------------Home tab-------------------------->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#portfolio">Works</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Building Innovative Software Solutions</p>
+        <h1>Hi There, <br> I am <span>Sachin</span><br>and a passionate<br><span id="element"></span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------Works------------------------------>
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.jpeg" alt="work1" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              error, quae culpa sed facere fugit dicta provident,
+              exercitationem facilis aliquam et delectus eveniet illo. Fugiat
+              repudiandae incidunt vitae voluptates sed.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.jpeg" alt="work1" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              error, quae culpa sed facere fugit dicta provident,
+              exercitationem facilis aliquam et delectus eveniet illo. Fugiat
+              repudiandae incidunt vitae voluptates sed.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.jpeg" alt="work1" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              error, quae culpa sed facere fugit dicta provident,
+              exercitationem facilis aliquam et delectus eveniet illo. Fugiat
+              repudiandae incidunt vitae voluptates sed.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!----------------------Services-------------------->
+  <div class="services" id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code" id="fa"></i>
+          <h2>Web Developer</h2>
+          <p>
+            As a skilled web developer, I specialize in creating responsive, user-friendly websites and web
+            applications. My expertise includes front-end and back-end development, ensuring seamless functionality and
+            engaging user experiences. Whether you need a simple website or a complex application, I am dedicated to
+            delivering high-quality, tailored solutions to meet your unique business needs.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Applications</h2>
+          <p>
+            I am specializes in developing robust and scalable web applications tailored to meet your business
+            needs. With expertise in front-end and back-end technologies, I deliver seamless user experiences and
+            efficient solutions, ensuring your web applications are both functional and visually appealing. Let’s turn
+            your ideas into reality with cutting-edge web development services.
+          </p><br>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-terminal"></i>
+          <h2>Software Developer</h2>
+          <p>
+            As a dedicated software developer, I specialize in creating innovative, efficient, and scalable solutions.
+            With expertise in full-stack development, I design, build, and maintain web and mobile applications. My
+            commitment to quality and passion for technology ensures I deliver robust and user-friendly software
+            tailored to meet your unique business needs.
+          </p><br>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!----------About------Section------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/aboutpic.jpg" alt="User image" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p id="paragraph">
+            Hi Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur nulla tempore aspernatur cupiditate autem quae recusandae. Dolores modi fugit nisi voluptate aliquam autem consequatur? Sequi fugiat aspernatur inventore optio!.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li><span>2023</span><br />B.Tech form LNCTE with 8.39 CGPA</li>
+             
+              <li><span>2020</span><br />BCA from BRABU with 69%</li>
+              <li><span>2017</span><br />12th form BSEB with 57%</li>
+              <li><span>2015</span><br />10th form CBSE with 9 CGPA</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>Web Developer</span><br />web pages </li>
+              <li><span>Web application developer</span><br />Developing web applications</li>
+              <li><span>Software developer</span><br />Developing Software</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>Intern as a <span>Web Developer</span> at Corevotech pvt.Ltd </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!------------------------------Contact----Form-------------------------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>sachinkrsingh111@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>+919931873012</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sachinkrsingh111/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sachinkrsingh111/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#about"><i class="fa-brands fa-youtube"></i></i></a>
+            <a href="#header"><i class="fa-brands fa-square-x-twitter"></i></a>
+          </div>
+          <a href="images/SachinResume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4d51856c-68cf-4e40-9dff-081507dfdc5b">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2" >Submit</button>
+          </form>
+          <span id="msg">MESSAGE SENT SUCESSFULLY</span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        <i class="fa-regular fa-copyright"></i> Sachin Kr Singh. Made with
+        <i class="fa-solid fa-heart"></i> By Heavy Coders.
+      </p>
+    </div>
+  </div>
+  <!------------About-----------Script------------->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <!------------------------menu button script----------------------->
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <!---------Google from script put here-------->
+  <script>
+    const msg = document.getElementById("msg");
+    msg.innerHTML = "MESSAGE SENT SUCESSFULLY";
+    setTimeout(function () {
+      msg.innerHTML = '';
+    }, 2000);
+    form.reset();
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer.', 'React Js Developer.'],
+        typeSpeed: 40,
+    });
+  </script>
+</body>
+
+</html>
